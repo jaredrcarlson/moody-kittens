@@ -149,6 +149,10 @@ button.btn-special:hover{
   pointer-events: none;
 }
 
+.clear-kittens{
+  display: none;
+}
+
 .display-label{
   font-family: 'Secular One', sans-serif;
 }

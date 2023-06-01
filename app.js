@@ -65,7 +65,7 @@ function drawKittens() {
     <div class="card mt-1 mb-1">
       <h4 class="mt-1 mb-1 display-label">${kitten.name}</h4>
       <div class="kitten ${kitten.mood}">
-        <img src="moody-kitten.png" alt="">
+        <img src="moody-kitten.png" height="100" alt="">
       </div>
       <div class="d-flex space-between">
         <p class="display-label">
@@ -80,9 +80,11 @@ function drawKittens() {
         
           <button class="btn-dark" onclick="slap('${kitten.id}')">Slap</button>
           <button class="btn-dark" onclick="groom('${kitten.id}')">Groom</button>
-          
-          <i class="action fa fa-trash text-danger" onclick="removeKitten('${kitten.id}')"></i>
         </p>
+      </div>
+      <div class="d-flex">
+        <span class="p-1">Remove Kitten</span>
+        <i class="action fa fa-trash text-danger" onclick="removeKitten('${kitten.id}')"></i>
       </div>
     </div>
     `
@@ -219,6 +221,7 @@ function clearKittens(){
 function getStarted() {
   document.getElementById("welcome").remove();
   document.getElementById("kittens")?.classList.remove("hidden")
+  document.getElementById("clear-kittens")?.classList.remove("hidden")
   drawKittens()
 }
 
