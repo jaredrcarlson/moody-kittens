@@ -69,8 +69,8 @@ function drawKittens() {
       </div>
       <div class="d-flex space-between">
         <p class="display-label">
-          <span>Mood: ${kitten.mood}</span><br />
-          <span>Affection: ${kitten.affection}</span>
+          <span><small>Mood: ${kitten.mood}</small></span><br />
+          <span><small>Affection: ${kitten.affection}</small></span>
         </p>
       </div>
       <div class="d-flex space-between">
